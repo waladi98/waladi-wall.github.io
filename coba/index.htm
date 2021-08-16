@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Unicon -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <title>Document</title>
+    <style>
+      .container {
+        margin: 0;
+        padding: 1rem 0;
+      }
+      .btn-contact {
+        color: #707070;
+        font-weight: 600;
+        text-decoration: none;
+        padding: 0.5rem;
+        border-radius: 3px;
+        box-shadow: 0 8px 8px -4px rgba(246, 28, 112, 0.2);
+      }
+      .btn-icon {
+        color: white;
+        background-color: #f61c70;
+        padding: 0.5rem;
+        border-radius: 3px 0 0 3px;
+        position: relative;
+        right: 8px;
+      }
+
+      /* -- */
+      /*Don't forget to add Font Awesome CSS : "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"*/
+      input[type="text"] {
+        width: 100%;
+        border: 2px solid #aaa;
+        border-radius: 4px;
+        margin: 8px 0;
+        outline: none;
+        padding: 8px;
+        box-sizing: border-box;
+        transition: 0.3s;
+      }
+
+      input[type="text"]:focus {
+        border-color: dodgerBlue;
+        box-shadow: 0 0 8px 0 dodgerBlue;
+      }
+
+      .inputWithIcon input[type="text"] {
+        padding-left: 20px;
+      }
+
+      .inputWithIcon {
+        position: relative;
+      }
+
+      .inputWithIcon i {
+        position: absolute;
+        left: 0;
+        top: 8px;
+        padding: 9px 8px;
+        color: #aaa;
+        transition: 0.3s;
+      }
+
+      .inputWithIcon input[type="text"]:focus + i {
+        color: dodgerBlue;
+      }
+
+      .inputWithIcon.inputIconBg i {
+        background-color: #aaa;
+        color: #fff;
+        padding: 9px 4px;
+        border-radius: 4px 0 0 4px;
+      }
+
+      .inputWithIcon.inputIconBg input[type="text"]:focus + i {
+        color: #fff;
+        background-color: dodgerBlue;
+      }
+    </style>
+  </head>
+  <body>
+    <!--  -->
+    <div class="btn"></div>
+    <a href="#contact" class="button button--flex btn-contact">
+      <i class="uil uil-message btn-icon button_icon"></i>
+      Contact Me
+    </a>
+
+    <a href="#contact" class=""> Contact Me <i class="uil uil-message button_icon"></i> </a>
+  </body>
+</html>
